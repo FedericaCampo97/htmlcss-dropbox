@@ -11,45 +11,87 @@ body{
 #login{
     width: 100%;
     height: 60px;
-    background-color: rgba(161, 141, 141, 0.726);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .info{
-    width: 350px;
+    width: 500px;
     height: 50px;
-    background-color: rgba(128, 128, 128, 0.774);
     margin: 0px 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #222222;
+}
+.info2{
+    position:absolute;
+    right: 0px;
+}
+.btn_inizia{
+    font-size: 13px;
+    padding: 6px 15px;
+    background-color: #0061ff;
+    border: none;
+    color: white;
 }
 #presentation{
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-color: #b4d0e7;
     padding: 70px 0px;
 }
 #titolo{
     width: 1000px;
-    height: 80px;
+    height: 200px;
     background-color: rgba(0, 0, 255, 0.479);
     margin: auto;
+}
+h1{
+    font-size: 80px;
 }
 .block1{
     margin: auto;
     width: 1000px;
-    height: 400px;
+    height: 520px;
     background-color: rgba(47, 47, 179, 0.486);
     display: flex;
 }
 .spiegazione{
-    width: 350px;
-    height: 340px;
+    width: 400px;
+    height: 410px;
     background-color: rgba(0, 255, 255, 0.507);
-    margin: 5px 10px;
+    margin: 5px 0px;
+    position: relative;
+}
+.spiegazione > p {
+    padding: 25px 0px;
+    font-size: 19px;
+}
+.spiegazione > button {
+    margin: 18px 0px;
+    color: white;
+    background-color: #0061ff;
+    border: none;
+    padding: 7px 10px;
+    font-size: 19px;
+}
+.spiegazione > i {
+    position: absolute;
+    bottom: 0;
+    font-size: 38px;
 }
 .immagine1{
     width: 600px;
     height: 96%;
     background-color: rgba(0, 255, 255, 0.507);
     margin: 5px 10px;
+}
+.proposta{
+    width: 100%;
+    height: 510px;
 }
