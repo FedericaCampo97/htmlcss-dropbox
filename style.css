@@ -14,19 +14,42 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 9999;
 }
 .info{
-    width: 500px;
+    width: 700px;
     height: 50px;
     margin: 0px 15px;
     display: flex;
     align-items: center;
     position: relative;
 }
-a{
-    padding: 0px 20px;
+.info2 > a{
+    padding: 6px 20px;
     text-decoration: none;
     color: #222222;
+    transition: 0.3s;
+    border-bottom: white 2px solid;
+}
+.info2 > a:hover {
+    border-bottom: black 2px solid;
+}
+.info > img {
+    margin-right: 10px;
+}
+.info > a{
+    padding: 6px 20px;
+    text-decoration: none;
+    color: #222222;
+    transition: 0.3s;
+    border-bottom: white 2px solid;
+
+}
+.info > a:hover{
+    border-bottom: black 2px solid;
 }
 .info2{
     position:absolute;
@@ -38,6 +61,12 @@ a{
     background-color: #0061ff;
     border: none;
     color: white;
+    transition: 0.7s;
+    margin-left: 10px;
+}
+.btn_inizia:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
 #presentation{
     width: 100%;
@@ -45,12 +74,12 @@ a{
     background-color: #b4d0e7;
     padding: 70px 0px;
 }
-#titolo{
+.titolo{
     width: 1000px;
     height: 200px;
     margin: auto;
 }
-h1{
+.titolo > h1{
     font-size: 80px;
 }
 .block1{
@@ -77,6 +106,11 @@ h1{
     border: none;
     padding: 7px 10px;
     font-size: 19px;
+    transition: 0.7s;
+}
+.spiegazione > button:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
 .spiegazione > i {
     position: absolute;
@@ -113,7 +147,7 @@ h2{
     justify-content: space-between;
     position: relative;
 }
-.column{
+.col{
     width: calc(92% / 3);
     height: 920px;
     margin: 10px 0px;
@@ -131,21 +165,26 @@ h2{
 .row > span {
     padding: 0px 7px;
 }
-h3 {
+.col > div > h3 {
     font-size: 25px;
     padding: 13px 10px;
 }
-.column > div > p {
+
+.col > div > p {
     padding: 8px 10px;
 }
 .block3{
     margin: 20px 10px;
     width: 250px;
     height: 340px;
-    border-bottom: black 1px solid;
 }
 .block3 > div {
     margin: 30px 0px;
+    display: flex;
+}
+.block3 > div > span {
+    padding-left: 5px;
+    height: 30px;
 }
 .provagratis{
     background-color: #0061ff;
@@ -154,10 +193,26 @@ h3 {
     padding: 10px 0px;
     width: 100%;
     margin: 25px 0px;
+    transition: 0.7s;
+}
+.provagratis:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
 .block3 > a {
     text-decoration: underline;
     color: #0061ff;
+}
+.shortline{
+    border-top: 1px solid gray;
+    width: 80px;
+    margin: 10px;
+}
+.shortline2{
+    border-top: 1px solid gray;
+    width: 80px;
+    padding: 0;
+    margin-left: 50px;
 }
 .block4{
     margin: 20px 10px;
@@ -166,6 +221,13 @@ h3 {
 .block4 > h4 {
     padding: 20px 0px;
 }
+.block4 > ul > li > div {
+    display: flex;
+}
+.block4 > ul > li > div > span{
+    margin-left: 10px;
+}
+
 ul{
     list-style: none;
     margin: 20px 0px;
@@ -176,7 +238,7 @@ li{
 .spunta{
     color: #0061ff;
 }
-.columnorizzontal{
+.colorizzontal{
     width: 100%;
     height: 230px;
     border: black 1px solid;
@@ -191,20 +253,24 @@ li{
     height: 170px;
     display: flex;
 }
-.column2{
+.blockorizzontal > .col2 > h3{
+    font-size: 25px;
+    padding: 13px 10px;
+}
+.col2{
     width: 600px;
 }
-.column2 > h4{
+.col2 > h4{
     padding: 17px 10px;
 }
-.column2 > p {
+.col2 > p {
     padding: 0px 10px;
 }
-.column3 {
+.col3 {
     position: relative;
     width: 270px;
 }
-.column3 > button {
+.col3 > button {
     margin: 18px 0px;
     color: white;
     background-color: #0061ff;
@@ -213,7 +279,11 @@ li{
     font-size: 16px;
     position: absolute;
     right: 0;
-    
+    transition: 0.7s;
+}
+.col3 > button:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
 .container2{
     width: 100%;
@@ -224,26 +294,235 @@ li{
     height: 100%;
     display: flex;
 }
-.column4{
+.col4{
     width: 60%;
     height: 100%;
     background-image: url(./img/partner.png);
     background-size: cover;
 }
-.column5{
+.col5{
     width: 40%;
     height: 100%;
     padding: 50px 20px;
 }
-.column5 > h3 {
+.col5 > h3 {
     padding: 0px;
 }
-.column5 > p {
+.col5 > p {
     padding: 30px 0px;
     font-size: 19px;
 }
-.column5 > button {
+.col5 > button {
     border: black 1px solid;
     padding: 10px 14px;
     margin-top: 20px;
+    background-color: white;
+    transition: 0.5s;
+}
+.col5 > button:hover{
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+.container3{
+    width: 100%;
+    height: 1200px;
+    margin-top: 90px;
+}
+.block7{
+    width: 100%;
+    height: 1000px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row4{
+    width: calc(100% / 3);
+    height: 450px;
+    padding: 15px;
+}
+.img2{
+    width: 100%;
+}
+.row4 > h4 {
+    font-size: 25px;
+    padding: 15px 0px;
+    
+}
+.secondtitle{
+    width: 600px;
+    height: 200px;
+    margin: 50px;
+}
+.secondtitle > h1{
+    font-size: 45px;
+    margin: 40px 0px;
+}
+.secondtitle > a {
+    color: #0061ff;
+}
+.container_big{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.774);
+    display: flex;
+}
+.col7{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    background-color: rgba(245, 30, 30, 0.479);
+    position: relative;
+}
+.square{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.green{
+    background-color: #a2d39b;
+    border: #d1e9cd 20px solid;
+}
+.square > img {
+    width: 100%;
+}
+.plum{
+    background-color: #61082b;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.skyblue{
+    background-color: #0093ce;
+}
+.red1{
+    background-color: #ff1c1c;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.description{
+    background-color: #f5f5f5;
+}
+.imgblockpadd{
+    padding: 50px;
+}
+.description > div > img {
+    width: 280px;
+}
+.description > p {
+    padding: 50px;
+    font-size: 18px;
+}
+.description > span {
+    padding: 50px;
+    font-size: 18px;
+}
+.red2{
+    background-color: #d5001f;
+}
+.skybluecleare{
+    background-color: #0d2481;
+}
+.blue{
+    background-color: #b4d0e7;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.yellow{
+    background-color: #ffd830;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.container_big2{
+    background-color: #b4d0e7;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.advertising_title{
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advertising_button{
+    width: 300px;
+    height: 60px;
+    position: relative;
+    
+}
+.advertising_button > button{
+    padding: 10px 15px;
+    position: absolute;
+    right: 0;
+    border: none;
+    transition: 0.5s;
+}
+.advertising_button > button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.container_quiz{
+    margin: auto;
+    margin-top: 80px;
+    max-width: 900px;
+    height: 600px;
+}
+.container_quiz > div {
+    border-bottom: 1px gray solid;
+    padding: 25px 0px;
+    display: flex;
+    position: relative;
+}
+.container_quiz > div > i {
+    position: absolute;
+    right: 40px;
+    font-size: 10px;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container4{
+    width: 1100px;
+    display: flex;
+}
+.colfooter{
+    width: calc(100% / 5);
+    padding: 30px 0px;
+}
+.colfooter > ul > li {
+    padding: 5px 0px;
+    color: white;
+}
+.colfooter > h3 {
+    color: white;
+}
+.leangueges{
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: solid gray 1px;
+    width: 100px;
+}
+.leangueges > i{
+    color: white;
+    font-size: 11px;
+}
+.leangueges > span {
+    color: white;
+    padding: 0px 4px;
+    font-size: 13px;
 }
