@@ -48,7 +48,6 @@ a{
 #titolo{
     width: 1000px;
     height: 200px;
-    background-color: rgba(0, 0, 255, 0.479);
     margin: auto;
 }
 h1{
@@ -58,19 +57,18 @@ h1{
     margin: auto;
     width: 1000px;
     height: 520px;
-    background-color: rgba(47, 47, 179, 0.486);
     display: flex;
 }
 .spiegazione{
     width: 400px;
     height: 410px;
-    background-color: rgba(0, 255, 255, 0.507);
     margin: 5px 0px;
     position: relative;
 }
 .spiegazione > p {
-    padding: 25px 0px;
+    padding-bottom: 25px;
     font-size: 19px;
+    margin-top: 10px;
 }
 .spiegazione > button {
     margin: 18px 0px;
@@ -88,10 +86,164 @@ h1{
 .immagine1{
     width: 600px;
     height: 96%;
-    background-color: rgba(0, 255, 255, 0.507);
-    margin: 5px 10px;
+    background-image: url(./img/jumbo.png);
+    background-size: cover;
+    margin: 10px 10px;
+    padding: 20px 0px;
 }
-.proposta{
+main{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 100px;
+}
+.container{
     width: 100%;
-    height: 510px;
+    height: 1500px;
+}
+h2{
+    font-size: 30px;
+    padding: 25px 0px;
+}
+.block2{
+    width: 100%;
+    height: 1300px;
+    margin: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.column{
+    width: calc(92% / 3);
+    height: 920px;
+    margin: 10px 0px;
+    border: black 1px solid;
+}
+
+.row{
+    width: 100%;
+    height: 40px;
+    border-bottom: black 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row > span {
+    padding: 0px 7px;
+}
+h3 {
+    font-size: 25px;
+    padding: 13px 10px;
+}
+.column > div > p {
+    padding: 8px 10px;
+}
+.block3{
+    margin: 20px 10px;
+    width: 250px;
+    height: 340px;
+    border-bottom: black 1px solid;
+}
+.block3 > div {
+    margin: 30px 0px;
+}
+.provagratis{
+    background-color: #0061ff;
+    border: none;
+    color: white;
+    padding: 10px 0px;
+    width: 100%;
+    margin: 25px 0px;
+}
+.block3 > a {
+    text-decoration: underline;
+    color: #0061ff;
+}
+.block4{
+    margin: 20px 10px;
+    width: 250px;
+}
+.block4 > h4 {
+    padding: 20px 0px;
+}
+ul{
+    list-style: none;
+    margin: 20px 0px;
+}
+li{
+    padding: 10px 0px;
+}
+.spunta{
+    color: #0061ff;
+}
+.columnorizzontal{
+    width: 100%;
+    height: 230px;
+    border: black 1px solid;
+}
+.block5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blockorizzontal {
+    width: 97%;
+    height: 170px;
+    display: flex;
+}
+.column2{
+    width: 600px;
+}
+.column2 > h4{
+    padding: 17px 10px;
+}
+.column2 > p {
+    padding: 0px 10px;
+}
+.column3 {
+    position: relative;
+    width: 270px;
+}
+.column3 > button {
+    margin: 18px 0px;
+    color: white;
+    background-color: #0061ff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    
+}
+.container2{
+    width: 100%;
+    height: 500px;
+}
+.block6{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.column4{
+    width: 60%;
+    height: 100%;
+    background-image: url(./img/partner.png);
+    background-size: cover;
+}
+.column5{
+    width: 40%;
+    height: 100%;
+    padding: 50px 20px;
+}
+.column5 > h3 {
+    padding: 0px;
+}
+.column5 > p {
+    padding: 30px 0px;
+    font-size: 19px;
+}
+.column5 > button {
+    border: black 1px solid;
+    padding: 10px 14px;
+    margin-top: 20px;
 }
